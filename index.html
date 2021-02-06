@@ -7,7 +7,7 @@
   <link href="https://www.w3.org/StyleSheets/TR/2016/cg-draft" rel="stylesheet">
   <link href="https://www.w3.org/2008/site/images/favicon.ico" rel="icon">
   <meta content="Bikeshed version c5172e83, updated Fri Nov 20 15:35:20 2020 -0800" name="generator">
-  <meta content="e7e8ddd7be83d03d61be72a144990accdc354835" name="document-revision">
+  <meta content="6e67a5af80d9bde01d014513393ad84b705c230b" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -564,7 +564,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
         <li><a href="#relation-between-concepts"><span class="secno">1.4.1</span> <span class="content">Relation between Concepts</span></a>
        </ol>
       <li>
-       <a href="#aligning-these-concepts-with-tbd-the-ones-called-out-in-the-charter-educational-data-standards"><span class="secno">1.5</span> <span class="content">Aligning these Concepts with TBD (the ones called out in the charter...) Educational Data Standards</span></a>
+       <a href="#aligning-these-concepts-with-tbd-educational-data-standards"><span class="secno">1.5</span> <span class="content">Aligning these Concepts with TBD Educational Data Standards</span></a>
        <ol class="toc">
         <li><a href="#basis-on-ceds-conceptual-model"><span class="secno">1.5.1</span> <span class="content">Basis on CEDS Conceptual Model</span></a>
         <li><a href="#application-to-the-vc-data-model"><span class="secno">1.5.2</span> <span class="content">Application to the VC data model</span></a>
@@ -677,7 +677,8 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
    </ul>
    <h4 class="heading settled" data-level="1.4.1" id="relation-between-concepts"><span class="secno">1.4.1. </span><span class="content">Relation between Concepts</span><a class="self-link" href="#relation-between-concepts"></a></h4>
     All of these concepts can be related to one another. Thus Concept 3 can recognize Concept 5 by Concept 6 to include the acquisition of Concept 2, as a result of completing Concept 1, while being Concept 4. 
-   <h3 class="heading settled" data-level="1.5" id="aligning-these-concepts-with-tbd-the-ones-called-out-in-the-charter-educational-data-standards"><span class="secno">1.5. </span><span class="content">Aligning these Concepts with TBD (the ones called out in the charter...) Educational Data Standards</span><a class="self-link" href="#aligning-these-concepts-with-tbd-the-ones-called-out-in-the-charter-educational-data-standards"></a></h3>
+   <h3 class="heading settled" data-level="1.5" id="aligning-these-concepts-with-tbd-educational-data-standards"><span class="secno">1.5. </span><span class="content">Aligning these Concepts with TBD Educational Data Standards</span><a class="self-link" href="#aligning-these-concepts-with-tbd-educational-data-standards"></a></h3>
+   <p>(TBD == the ones called out in the charter...)</p>
    <p>To restate and refine the goals of this document utilizing the concepts listed above, this document seeks to:</p>
    <ul>
     <li data-md>
@@ -732,18 +733,33 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
     <li data-md>
      <p>credentialSubject is Person</p>
    </ul>
-   <p>Note that these are not restrictions of the VC data model, rather a categorization of the VC-ED use cases.</p>
-   <p>Side Note: Outer VC data model is: Issuer (Person/Org) made assertion about (Event) subject (Person)</p>
+   <p>Note that these are not restrictions of the VC data model, rather based on classification of the VC-ED use cases.</p>
    <p><img alt="alt_text" src="images/vc_ed_model.png" title="image_tooltip" width="400"></p>
+   <p>Side Note: The outer VC data model is: "Issuer" (Person/Org) "made assertion about" (Event) "subject" (Person)</p>
    <ul>
     <li data-md>
-     <p>Concept 1 (activity):	PERSON ~did/performed~ ACTIVITY (EVENT)</p>
+     <p>Concept 1 (activity):	Person ~did/performed~ ACTIVITY (Event)</p>
     <li data-md>
-     <p>Concept 2 (competency):	PERSON ~demonstrated~ COMPETENCY DEFINITION (RESOURCE)</p>
+     <p>Concept 2 (competency):	Person ~demonstrated~ COMPETENCY DEFINITION (Resource)</p>
     <li data-md>
-     <p>Concept 3 (recognition type): PERSON ~has/earned~ CREDENTIAL DEFINITION (RESOURCE)</p>
+     <p>Concept 3 (recognition type): Person ~has/earned~ CREDENTIAL DEFINITION (Resource)</p>
     <li data-md>
-     <p>Concept 4 (involvement): PERSON ~has role~ INVOLVEMENT (ROLE:RELATIONSHIP)</p>
+     <p>Concept 4 (involvement): Person ~has role~ INVOLVEMENT (Role: Relationship)</p>
+   </ul>
+   <p>The remainder of this document will recommend:</p>
+   <ul>
+    <li data-md>
+     <p>Issuer type and recommended properties</p>
+    <li data-md>
+     <p>Subject type and recommended properties</p>
+    <li data-md>
+     <p>Verifiable Credential (outermost) recommended properties</p>
+    <li data-md>
+     <p>Property (or conceptual property?) describing Person’s relationship to Concepts 1-4 for use in a Verifiable Credential</p>
+    <li data-md>
+     <p>Examples/realizations for TBD data standards</p>
+    <li data-md>
+     <p>Recommended properties at outermost level?</p>
    </ul>
    <h3 class="heading settled" data-level="1.6" id="related-work"><span class="secno">1.6. </span><span class="content">Related Work</span><a class="self-link" href="#related-work"></a></h3>
    <ul>
